@@ -1,0 +1,196 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 150px;
+  }
+  
+.title {
+    text-align: center;
+    color: #128b1c;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 3rem;
+  }
+  
+  form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .input-item {
+    flex: 1;
+    padding: 15px;
+    margin-right: 10px;
+    border: 3px solid #128b1c;
+    border-radius: 5px;
+  }
+
+  input::placeholder{
+    font-size: 1.2rem;
+    color: green;
+  }
+  
+  button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition:  0.5s;
+  }
+  
+  button:hover {
+    background-color: #106708;
+  }
+  
+  .title2 {
+    color: #128b1c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  .nao-comprou {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .nao-comprou span{
+    color: #106708;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+  }
+  
+  .comprou {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .comprou span {
+    text-decoration: line-through;
+    color: #128b1c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+  }
+  
+  span {
+    flex: 1;
+    padding: 0 10px;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
+  button:disabled {
+    background-color: #c94e4e;
+    cursor: not-allowed;
+    font-size: 20px;
+  }
+
+
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 15px;
+    top: 100px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .input-item {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 6px 15px;
+    font-size: 0.8rem;
+  }
+
+  .title2 {
+    font-size: 1.2rem;
+  }
+
+  .nao-comprou span,
+  .comprou span {
+    font-size: 1rem;
+  }
+
+  li {
+    padding: 5px;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-item {
+    margin-right: 0;
+  }
+}
+  
+
+
+ @media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .input-item {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .title2 {
+    font-size: 1.5rem;
+  }
+
+  .nao-comprou span,
+  .comprou span {
+    font-size: 1.1rem;
+  }
+}
